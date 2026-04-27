@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Загородный Мир | Премиальная недвижимость</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      /* Убираем стандартные отступы, чтобы сайт был во весь экран */
-      body, html { margin: 0; padding: 0; overflow-x: hidden; }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-
+    
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <script src="https://unpkg.com/framer-motion@11.0.8/dist/framer-motion.js"></script>
     
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/babel" src="./zagmir-spa.jsx"></script>
-  </body>
+    <style>
+      body, html { margin: 0; padding: 0; overflow-x: hidden; background-color: #fdfbf7; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" data-presets="react" src="./zagmir-spa.jsx"></script>
+</body>
 </html>
