@@ -1,12 +1,11 @@
-// Берем инструменты из глобальных объектов, которые загрузил index.html
 const { useState, useEffect, useRef } = React;
-const { motion, AnimatePresence } = window.Motion;
+const { motion, AnimatePresence } = FramerMotion; // Было window.Motion
 const { 
-  Phone, Search, ChevronRight, MapPin, Home, Trees, Droplets,
-  Shield, Star, Clock, ArrowRight, Menu, X, MessageCircle,
-  Send, Award, Users, CheckCircle, Building2, Leaf, Heart,
+  Phone, Search, ChevronRight, MapPin, Home, Trees, Droplets, 
+  Shield, Star, Clock, ArrowRight, Menu, X, MessageCircle, 
+  Send, Award, Users, CheckCircle, Building2, Leaf, Heart, 
   Instagram, Facebook, Youtube, Mail, ExternalLink 
-} = window.lucide;
+} = LucideIcons;
 
 const COLORS = {
   white: "#FFFFFF",
