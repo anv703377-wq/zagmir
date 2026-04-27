@@ -1,11 +1,12 @@
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import {
+// Берем инструменты из глобальных объектов, которые загрузил index.html
+const { useState, useEffect, useRef } = React;
+const { motion, AnimatePresence } = window.Motion;
+const { 
   Phone, Search, ChevronRight, MapPin, Home, Trees, Droplets,
   Shield, Star, Clock, ArrowRight, Menu, X, MessageCircle,
   Send, Award, Users, CheckCircle, Building2, Leaf, Heart,
-  Instagram, Facebook, Youtube, Mail, ExternalLink
-} from "lucide-react";
+  Instagram, Facebook, Youtube, Mail, ExternalLink 
+} = window.lucide;
 
 const COLORS = {
   white: "#FFFFFF",
@@ -685,3 +686,5 @@ export default function App() {
     </div>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
